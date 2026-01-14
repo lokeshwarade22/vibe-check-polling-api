@@ -5,6 +5,10 @@ import sqlite3
 
 # 1️⃣ CREATE APP FIRST
 app = FastAPI()
+@app.get("/")
+def home():
+    return {"message": "Vibe Check Polling API is running"}
+
 
 # 2️⃣ DATABASE SETUP
 conn = sqlite3.connect("polls.db", check_same_thread=False)
