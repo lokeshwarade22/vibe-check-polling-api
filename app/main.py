@@ -6,7 +6,7 @@ import sqlite3
 # 1️⃣ CREATE APP FIRST
 app = FastAPI()
 @app.get("/")
-def home():
+def root():
     return {"message": "Vibe Check Polling API is running"}
 
 
